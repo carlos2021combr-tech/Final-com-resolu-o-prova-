@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Início - Sistema Acadêmico</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1 id="titulo-sistema">Sistema de Gerenciamento Acadêmico</h1>
+    <nav>
+      <a href="index.html">Início</a>
+      <a id="link-alunos" href="alunos.html">Alunos</a>
+      <a href="cursos.html">Cursos</a>
+      <a href="matriculas.html">Matrículas</a>
+      <a href="usuarios.html">Usuários</a>
+    </nav>
+  </header>
+  <main>
+    <h2>Dashboard</h2>
+    <button type="button" id="btn-ativos">Mostrar apenas ativos</button>
+    <button type="button" id="btn-restaurar-tudo" class="secundario">Restaurar dados iniciais</button>
+    <section class="lista-grid">
+      <article class="card"><h3>Alunos</h3><span class="numero" id="total-alunos">0</span></article>
+      <article class="card"><h3>Cursos</h3><span class="numero" id="total-cursos">0</span></article>
+      <article class="card"><h3>Matrículas</h3><span class="numero" id="total-matriculas">0</span></article>
+      <article class="card"><h3>Usuários</h3><span class="numero" id="total-usuarios">0</span></article>
+    </section>
+  </main>
+  <footer>Programação Web I - Aula 11 - JSON e LocalStorage</footer>
+  <script src="js/dados.js"></script>
+  <script src="js/storage.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

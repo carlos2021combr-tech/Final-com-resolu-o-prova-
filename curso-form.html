@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Novo curso - Sistema Acadêmico</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1 id="titulo-sistema">Sistema de Gerenciamento Acadêmico</h1>
+    <nav>
+      <a href="index.html">Início</a>
+      <a id="link-alunos" href="alunos.html">Alunos</a>
+      <a href="cursos.html">Cursos</a>
+      <a href="matriculas.html">Matrículas</a>
+      <a href="usuarios.html">Usuários</a>
+    </nav>
+  </header>
+  <main>
+    <h2>Cadastrar curso</h2>
+    <form id="form-curso">
+      <div><label for="nome">Nome</label><input id="nome" type="text" required></div>
+      <div><label for="sigla">Sigla</label><input id="sigla" type="text" required></div>
+      <div><label for="carga">Carga horária (h)</label><input id="carga" type="number" min="1" required></div>
+      <div><label for="status">Status</label><select id="status"><option value="ativo">Ativo</option><option value="inativo">Inativo</option></select></div>
+      <button type="submit">Cadastrar curso</button>
+      <p id="mensagem-form" role="status"></p>
+    </form>
+    <h2>Cursos cadastrados</h2>
+    <div id="lista-cursos" class="lista-grid"></div>
+  </main>
+  <footer>Programação Web I - Aula 11 - JSON e LocalStorage</footer>
+  <script src="js/dados.js"></script>
+  <script src="js/storage.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
